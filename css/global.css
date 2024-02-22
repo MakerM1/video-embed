@@ -1,0 +1,212 @@
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: rgb(46, 46, 46);
+}
+body .messages {
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  bottom: 120px;
+  overflow-y: scroll;
+  padding: 0 0 50px 0;
+}
+body .messages li {
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+}
+body .messages li a {
+  color: #0074ed;
+}
+body .messages li a:hover {
+  text-decoration: underline;
+}
+body .messages li:nth-child(even) {
+  background-color: rgb(41, 41, 41);
+}
+body .messages li:nth-child(odd) {
+  background-color: rgb(75, 75, 75);
+}
+body .messages li .vid-container {
+  margin-top: 13px;
+  max-width: 500px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+body .messages li .vid-container::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  background-color: red;
+  width: 5px;
+  border-radius: 20px;
+  top: 0;
+  left: 0px;
+}
+body .messages li .vid-container .video-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 13px;
+  margin-bottom: 15px;
+}
+body .messages li .vid-container .video-titles .youtube-link {
+  font-size: 12px;
+  color: rgb(187, 187, 187);
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+body .messages li .vid-container .video-titles .youtube-link:hover {
+  text-decoration: underline;
+  color: rgb(240, 240, 240);
+}
+body .messages li .vid-container .video-titles .channel-name {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+body .messages li .vid-container .video-titles .video-title {
+  font-size: 15px;
+  color: #0074ed;
+  font-weight: 500;
+}
+body .messages li .vid-container iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+body .message-send-container {
+  max-width: 90%;
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .message-send-container .message-input {
+  max-width: 70%;
+  width: 100%;
+  min-height: 35px;
+  background-color: rgb(75, 75, 75);
+  outline: 2px solid transparent;
+  color: white;
+  padding: 15px 70px 15px 25px;
+  border-radius: 30px;
+  font-size: 20px;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+body .message-send-container .message-input:focus {
+  outline: 2px solid #0074ed;
+}
+body .message-send-container .message-input::-moz-selection {
+  color: red;
+  background: yellow;
+}
+body .message-send-container .message-input::selection {
+  color: red;
+  background: yellow;
+}
+body .message-send-container .message-send-button {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #186ac3;
+  color: white;
+  position: absolute;
+  right: 16%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+body .message-send-container .message-send-button:hover {
+  background-color: #0074ed;
+}
+body .message-send-container .message-send-button:active {
+  background-color: #1161b5;
+}/*# sourceMappingURL=global.css.map */
